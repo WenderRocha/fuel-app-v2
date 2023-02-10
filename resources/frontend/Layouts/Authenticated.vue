@@ -63,6 +63,15 @@
           </template>
           Book
         </NavLink>
+        <NavLink
+          :href="route('goals.index')"
+          :active="route().current('goals.index')"
+        >
+          <template #icon>
+            <i:mdi:trophy-outline />
+          </template>
+          Objetivos
+        </NavLink>
       </NavList>
     </NavDrawer>
 
