@@ -1,0 +1,41 @@
+{
+    "color": [
+        "#22c55e",
+        "#ef4444",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "backgroundColor": "rgba(0,0,0,0)",
+    "textStyle": {
+        "color": "#f1f1f1"
+    },
+    "title": {
+        "textStyle": {
+          "color": "#f1f1f1f1"
+        },
+        "subtextStyle": {
+            "color": "#999999"
+          }
+    },
+    "legend": {
+        "textStyle": {
+          "color": "#f1f1f1"
+        }
+      },
+    "pie": {
+
+        "label": {
+            "color": "#ffffff"
+        },
+        "legend": {
+            "textStyle": {
+              "color": "#f1f1f1"
+            }
+          }
+    }
+  }

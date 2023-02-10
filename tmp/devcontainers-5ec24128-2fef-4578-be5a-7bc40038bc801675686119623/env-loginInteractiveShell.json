@@ -1,0 +1,18 @@
+{
+	"XDEBUG_MODE": "off",
+	"HOSTNAME": "511a5100797d",
+	"REMOTE_CONTAINERS_IPC": "/tmp/vscode-remote-containers-ipc-5b5dd3e41471b1b42db78f7f8085b2a790b67887.sock",
+	"LARAVEL_SAIL": "1",
+	"TZ": "UTC",
+	"XDEBUG_CONFIG": "client_host=host.docker.internal",
+	"HOME": "/home/sail",
+	"LS_COLORS": "",
+	"WWWUSER": "1000",
+	"LESSCLOSE": "/usr/bin/lesspipe %s %s",
+	"REMOTE_CONTAINERS_SOCKETS": "[\"/tmp/vscode-ssh-auth-5b5dd3e41471b1b42db78f7f8085b2a790b67887.sock\",\"/tmp/.X11-unix/X2\",\"/home/sail/.gnupg/S.gpg-agent\"]",
+	"LESSOPEN": "| /usr/bin/lesspipe %s",
+	"SHLVL": "1",
+	"PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+	"DEBIAN_FRONTEND": "noninteractive",
+	"_": "/usr/bin/cat"
+}

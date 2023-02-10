@@ -1,0 +1,26 @@
+{
+
+    "backgroundColor": "rgba(0,0,0,0)",
+    "textStyle": {
+        "color": "#f1f1f1"
+    },
+    "title": {
+        "textStyle": {
+          "color": "#f1f1f1f1"
+        },
+        "subtextStyle": {
+            "color": "#999999"
+          }
+    },
+    "pie": {
+
+        "label": {
+            "color": "#ffffff"
+        },
+        "legend": {
+            "textStyle": {
+              "color": "#f1f1f1"
+            }
+          }
+    }
+  }
