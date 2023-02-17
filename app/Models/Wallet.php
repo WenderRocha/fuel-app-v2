@@ -46,4 +46,9 @@ class Wallet extends Model
     {
         return $this->hasMany(Calendar::class);
     }
+
+    public function goals()
+    {
+        return $this->hasMany(Goals::class);
+    }
 }

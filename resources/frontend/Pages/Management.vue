@@ -6,21 +6,34 @@
     <div class="tw-flex tw-items-center tw-justify-between">
       <div>
         <span class="text-h6 tw-mb-10">
-          {{ title }} {{ setDataBar }}
+          {{ title }}
         </span>
       </div>
 
-      <q-btn
-        color="dark"
-        @click="openModal = true"
-      >
-        <i:mdi:finance
-          width="30"
-          height="30"
-          class="tw-mr-3"
-        />
-        <div>Iniciar trade</div>
-      </q-btn>
+      <div class="tw-gap-2">
+        <q-btn
+          color="dark"
+          @click="openModal = true"
+        >
+          <i:mdi:finance
+            width="30"
+            height="30"
+            class="tw-mr-3"
+          />
+          <div>Iniciar trade</div>
+        </q-btn>
+        <q-btn
+          color="dark"
+          :href="route('goals.index', wallet.id)"
+        >
+          <i:mdi:trophy-outline
+            width="30"
+            height="30"
+            class="tw-mr-3"
+          />
+          <div>Objetivos</div>
+        </q-btn>
+      </div>
     </div>
     <!--START TITLE PAGE AND BUTTON ACTION-->
 
@@ -985,7 +998,7 @@ const tradeForm = useForm({
 })
 
 const assetsOptions = [
-  'EUR/USD', 'EUR/GBP', 'GBP/CHF', 'AUD/CAD', 'AUD/USD', 'JPY/CHF', 'GBP/USD'
+  'EUR/USD', 'EUR/GBP', 'GBP/CHF', 'AUD/CAD', 'AUD/USD', 'JPY/CHF', 'GBP/USD', 'AUD/JPY'
 ]
 
 const operationalOptions = [

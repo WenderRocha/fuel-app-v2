@@ -81,6 +81,14 @@ class TradeController extends Controller
                 $wallet->stop_loss = $this->walletService->stopLoss($wallet);
                 $wallet->save();
 
+                //atualiza os objetivos
+                $goals = $wallet->goals()->find(1)->where('profit_wallet', true)->first();
+
+                //dd(($goals));
+                $goals->initial_value = $this->walletService->profit($wallet);
+                $goals->progress = ($wallet->profit * 100) / $goals->value;
+                $goals->save();
+
                 //cria ou atualiza o calendario
                 $calendar = $wallet->calendars()->whereDate('created_at', date('Y-m-d'))->first();
 

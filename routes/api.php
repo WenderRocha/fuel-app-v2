@@ -19,5 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/block', function () {
-    return json_encode(["block" => true]);
+    return json_encode(["block" => false]);
 });

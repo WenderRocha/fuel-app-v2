@@ -1,12 +1,13 @@
 <?php
 
-use App\Http\Controllers\ManagementController;
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
+use App\Http\Controllers\GoalsController;
 use App\Http\Controllers\TradeController;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\WalletController;
+use App\Http\Controllers\ManagementController;
 
 
 
@@ -32,7 +33,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     Route::get('/book', [ManagementController::class, 'index'])->name('book.index');
 
-    Route::get('/goals', [ManagementController::class, 'index'])->name('goals.index');
+    Route::get('/goals/{id?}', [GoalsController::class, 'index'])->name('goals.index');
+    Route::post('/goals', [GoalsController::class, 'store'])->name('goals.store');
 });
 
 Route::post('/notify/{type}', function ($type) {
